@@ -1,0 +1,436 @@
+#mn_pri{
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	border-bottom: solid 3px rgb(255,201,14);
+	background: rgba(0,0,0,0.75);
+	transition: linear 0.5s;
+	overflow: hidden;
+}
+	#btnapps{
+		display: block;
+		position: fixed;
+		left: 0;
+		width: 35px;
+		height: 35px;
+		margin: 12.5px;
+		background: rgba(255,255,255,0.07);
+		border: none;
+		border-radius: 17.5px;
+		overflow: hidden;
+		transition: linear 0.5s;
+		cursor: pointer;
+		} 
+		#btnapps:hover{
+			background: rgba(255,255,255,0.15);
+		}
+		#btnapps img{
+			display: block;
+			width: 100%;
+		}
+
+	#btnsecao{
+		display: block;
+		position: fixed;
+		border-radius: 17.5px;
+		width: 170px;
+		height: 35px;
+		left: 60px;
+		margin: 12.5px 0px;
+		background: rgba(255,255,255,0.05);
+		overflow: hidden;
+		transition: linear 0.5s;
+		cursor: pointer;
+		}
+		#btnsecao img{
+			display: inline-block;
+			float: left;
+			transition: linear 0.5s;
+			width: 35px;
+			height: 35px;
+		}
+		#btnsecao p{
+			display: inline-block;
+			float: left;
+			margin: 6.5px 10px;
+			font-size: 13px;
+			font-family: 'monoton';
+			font-weight: bold;
+			transition: linear 0.5s;
+			color: rgb(255,201,14);
+		}
+
+	#barsearch{
+		display: inline-block;
+		float: right;
+		border-radius: 17.5px;
+		width: 400px;
+		height: 35px;
+		z-index: 5;
+		margin: 12.5px calc(50% - 200px);  
+		background: rgba(255,255,255,0.10);
+		overflow: hidden;
+		transition: linear 0.5s;
+		}
+
+		#btnsearch, #btnsearch_sec{
+			display: inline-block;
+			float: left;
+			border-radius: 17.5px;
+			width: 35px;
+			height: 35px;
+			border: none;
+			/*background: rgba(255,255,255,0.07);*/
+			background: transparent;
+			overflow: hidden;
+			cursor: pointer;*/
+			}
+			#btnsearch:hover, #btnsearch_sec:hover{
+				background: rgba(255,255,255,0.15);
+			}
+			#btnsearch img, #btnsearch_sec img{
+				display: block;
+				width: 100%;
+			}
+		#barsearch input{
+			display: inline-block;
+			float: left;
+			padding-left: 5px;
+			width: 360px;
+			height: 35px;
+			color: rgba(255,255,255,0.75);
+			background: transparent;
+			border: none;
+			font-size: 10px;
+			letter-spacing: 1px;
+			}
+			#barsearch input:focus{
+				letter-spacing: 1px;
+			}
+
+	#barsearch_sec{
+		display: block;
+		border-radius: 17.5px;
+		width: 340px;
+		height: 35px;
+		z-index: 5;
+		margin: 12.5px auto;  
+		background: rgba(255,255,255,0.10);
+		overflow: hidden;
+		transition: linear 0.5s;
+		}
+		#barsearch_sec input{
+			display: inline-block;
+			float: left;
+			padding-left: 5px;
+			width: 300px;
+			height: 35px;
+			color: rgba(255,255,255,0.75);
+			background: transparent;
+			/*background-color: #fff;*/
+			border: none;
+			font-size: 10.5px;
+			transition: linear 0.5s;
+			}
+		#btncancelsearch_sec{
+			display: block;
+			position: absolute;
+			margin-left: 302px;
+			border: none;
+			border-radius: 17.5px;
+			width: 30px;
+			height: 30px;
+			margin-top: 2.5px;
+			background-color: transparent;
+			cursor: pointer;
+			transition: linear 0.5s;
+			}
+			#btncancelsearch_sec:hover{
+				background-color: rgba(255,255,255,0.05);
+			}
+			#btncancelsearch_sec img{
+				width: 100%;
+			}
+
+
+	#widgetaudio{
+		display: block;
+		position: fixed;
+		border-radius: 17.5px;
+		width: 170px;
+		height: 35px;
+		right: 60px;
+		margin: 12.5px 0px;
+		background: rgba(255,255,255,0.10);
+		transition: linear 0.55s;
+		overflow: hidden;
+		}
+		#widgetaudio img{
+			display: inline-block;
+			float: left;
+			width: 25px;
+			height: 25px;
+			margin: 5px;
+			border: none;
+			border-radius: 17.5px;
+			cursor: pointer;
+			overflow: hidden;
+			}
+			#widgetaudio img:hover{
+				background: rgba(255,255,255,0.2);
+			}
+
+		#inf_audio{
+			display: inline-block;
+			float: left;
+			padding: 5px;
+			/*background: #fff;*/
+			}
+			#inf_audio p{
+				display: block;
+				font-family: "segoe";
+				font-size: 9px;
+				color: rgba(255,255,255,0.75);
+			}
+			#barmusic{
+				display: block;
+				width: 110px;
+				height: 2px;
+				margin: 5px 0;
+				background:rgba(255,255,255,0.5);
+				}
+				#barprogress{
+					display: block;
+					width: 50px;
+					height: 2px;
+					background: #fff;
+				}
+
+	#btnperfil{
+		display: block;
+		position: fixed;
+		right: 0;
+		border-radius: 17.5px;
+		width: 35px;
+		height: 35px;
+		margin: 12.5px;
+		border: none;
+		overflow: hidden;
+		transition: linear 0.5s;
+		cursor: pointer;
+		}
+		#btnperfil img{
+			display: block;
+			width: 35px;
+			height: 35px;
+		}
+
+@media screen and (max-width: 940px){
+	#barsearch{
+		width: 300px;
+		margin: 12.5px calc(50% - 150px);
+	}
+	#barsearch input{
+		width: 260px;
+		}
+}
+
+@media screen and (max-width: 800px){
+	#barsearch{
+		display: block;
+		position: fixed;
+		right: 60px;
+		width: 250px;
+		z-index: 5;
+		margin: 12.5px 0;  
+		background: rgba(255,255,255,0.10);
+		}
+		#barsearch input{
+			width: 210px;
+		}
+	#widgetaudio{width: 0;}
+}
+
+@media screen and (max-width: 705px){
+	#mn_pri{
+		height: 50px;
+	}
+	#btnapps{
+		margin: 10px;
+		width: 30px;
+		height: 30px;
+		} 
+
+	#btnsecao{
+		width: 135px;
+		height: 30px;
+		left: 50px;
+		margin: 10px 0px;
+		}
+		#btnsecao img{
+			width: 30px;
+			height: 30px;
+		}
+		#btnsecao p{
+			margin: 6px 10px;
+			font-size: 10px;
+		}
+
+	#btnperfil{
+		display: block;
+		position: fixed;
+		right: 0;
+		border-radius: 17.5px;
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+		border: none;
+		overflow: hidden;
+		cursor: pointer;
+		}
+		#btnperfil img{
+			display: block;
+			width: 100%;
+		}
+
+	#barsearch{
+		display: block;
+		position: fixed;
+		right: 50px;
+		width: 250px;
+		height: 30px;
+		z-index: 5;
+		margin: 10px 0;  
+		background: rgba(255,255,255,0.10);
+		}
+
+		#btnsearch, #btnsearch_sec{
+			width: 30px;
+			height: 30px;
+			}
+		#barsearch input{
+			padding-left: 5px;
+			width: calc(245px - 30px);
+			height: 30px;
+			color: rgba(255,255,255,0.75);
+			background: transparent;
+			border: none;
+			font-size: 10.5px;
+			}
+	#barsearch_sec{
+		border-radius: 15px;
+		width: 300px;
+		height: 30px;
+		z-index: 5;
+		margin: 10px auto;  
+		background: rgba(255,255,255,0.10);
+		overflow: hidden;
+		transition: linear 0.5s;
+		}
+		#barsearch_sec input{
+			padding-left: 5px;
+			width: 265px;
+			height: 30px;
+			color: rgba(255,255,255,0.75);
+			background: transparent;
+			/*background-color: #fff;*/
+			border: none;
+			font-size: 10.5px;
+			}
+		#btncancelsearch_sec{
+			margin-left: 271px;
+			width: 25px;
+			height: 25px;
+			margin-top: 2.5px;
+			}
+}
+
+@media screen and (max-width: 640px){
+	#mn_pri{
+		height: 50px;
+	}
+	#btnapps{
+		margin: 10px;
+		width: 30px;
+		height: 30px;
+		} 
+
+	#btnsecao{
+		width: 135px;
+		height: 30px;
+		left: 50px;
+		margin: 10px 0px;
+		}
+		#btnsecao img{
+			width: 30px;
+			height: 30px;
+		}
+
+	#btnperfil{
+		display: block;
+		position: fixed;
+		right: 0;
+		border-radius: 17.5px;
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+		border: none;
+		overflow: hidden;
+		cursor: pointer;
+		}
+		#btnperfil img{
+			display: block;
+			width: 100%;
+		}
+
+	#barsearch{width: 30px;}
+	#widgetaudio{display: none;}
+}
+
+@media screen and (max-width: 360px){
+	#mn_pri{
+		height: 50px;
+	}
+	#btnapps{
+		margin: 10px;
+		width: 30px;
+		height: 30px;
+		} 
+
+	#btnsecao{
+		width: 135px;
+		height: 30px;
+		left: 50px;
+		margin: 10px 0px;
+		}
+		#btnsecao img{
+			width: 30px;
+			height: 30px;
+		}
+		#btnsecao p{
+			margin: 8px 9px;
+			font-size: 10px;
+		}
+
+	#btnperfil{
+		display: block;
+		position: fixed;
+		right: 0;
+		border-radius: 17.5px;
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+		border: none;
+		overflow: hidden;
+		cursor: pointer;
+		}
+		#btnperfil img{
+			display: block;
+			width: 100%;
+		}
+	
+	#widgetaudio{display: none;}
+}
+
+
