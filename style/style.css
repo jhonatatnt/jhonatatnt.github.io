@@ -1,8 +1,8 @@
 
-@font-face{font-family: 'bauhaus'; src: url(../_fonts/bauhaus.ttf);}
-@font-face{font-family: 'monoton'; src: url(../_fonts/monoton.ttf);}
-@font-face{font-family: 'plaster'; src: url(../_fonts/Shrikhand-Regular.ttf);}
-@font-face{font-family: 'segoe'; src: url(../_fonts/segoe-ui-9.ttf);}
+@font-face{font-family: 'bauhaus'; src: url(../fonts/bauhaus.ttf);}
+@font-face{font-family: 'monoton'; src: url(../fonts/monoton.ttf);}
+@font-face{font-family: 'plaster'; src: url(../fonts/Shrikhand-Regular.ttf);}
+@font-face{font-family: 'segoe'; src: url(../fonts/segoe-ui-9.ttf);}
 *{padding: 0; margin: 0;}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: rgba(255,255,255,0.5);
@@ -23,7 +23,7 @@ button:focus, input:focus{
 
 body{
 	height: 100vh;
-	background-image: url(../../_img/fundo2.png);
+	background-image: url(../../img/fundo2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
