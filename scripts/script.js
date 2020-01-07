@@ -9,12 +9,12 @@ function menuApps() {
 	btnapps.onclick = function () {
 		if (k == 0) {
 			list_app.style.display = 'block';
-			icnlistapps.src = '_img/icncancel.png';
+			icnlistapps.src = 'img/icncancel.png';
 			k = 1;
 		}
 		else if (k == 1) {
 			list_app.style.display = 'none';
-			icnlistapps.src = '_img/icnlistapps.png';
+			icnlistapps.src = 'img/icnlistapps.png';
 			k = 0;
 		} 
 
@@ -38,11 +38,11 @@ function wdgMusic(){
 
 	icnwdgmusic.onclick = function() {
 		if (k == 0) {
-			icnwdgmusic.src = "_img/icnpause.png";
+			icnwdgmusic.src = "img/icnpause.png";
 			k = 1;
 		}
 		else if (k == 1) {
-			icnwdgmusic.src = "_img/icnplay.png";
+			icnwdgmusic.src = "img/icnplay.png";
 			k = 0;
 		} 
 		else {}
