@@ -1,0 +1,191 @@
+<?php
+ 	echo "<h1>hello world</h1>";
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demonstração</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/mnpri.css">
+	<link rel="stylesheet" type="text/css" href="style/listapp.css">
+	<link rel="stylesheet" type="text/css" href="style/search.css">
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+	<meta charset="UTF-8">
+	<meta name="application-name" content="allweGo">
+	<meta name="theme-color" content="#000"/>
+	<meta name="author" content="anOnimo">
+	<meta name="description" content="em construcao">
+	<meta name="generator">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="menuApps(), menuSecao(), wdgMusic(),btnsearch(), search()">
+
+	<div id="mn_pri">
+		<button id="btnapps"><img id="icnlistapps" src="img/icnlistapps.png"></button>
+
+		<div id="btnsecao">
+			<img src="img/icninicio_check.png">
+			<p>allwe go</p>
+		</div>
+
+		<div id="barsearch">
+			<button id="btnsearch"><img src="img/icnsearch.png"></button>
+			<input id="inputsearch" type="text" name="text" placeholder="O que você procura?">
+		</div>
+
+		<div id="barsearch_sec"  style="display: none;">
+			<button id="btnsearch_sec"><img src="img/icnsearch.png"></button>
+			<input id="inputsearch_sec" type="text" name="text" placeholder="O que você procura?">
+			<button id="btncancelsearch_sec"><img id="icncancel" src="img/icncancel.png"></button>
+		</div>
+
+
+		<div id="btnperfil"><img src="img/icnperfil.png"></div>
+
+		<div id="widgetaudio">
+			<img id="icnwdgmusic" src="img/icnplay.png">
+			<div id="inf_audio">
+				<p>Nome da musica...</p>
+				<div id="barmusic">
+					<div id="barprogress"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="bar_mn_sec">
+		<style type="text/css">
+			#bar_mn_sec{
+				display: block;
+				width: 100%;
+				position: fixed;
+				/*background-color: rgba(0,0,0,0.85);*/
+				z-index: 5;
+				bottom: 0px;
+			}
+			#mn_sec{
+				display: block;
+				width: 300px;
+				height: 45px;
+				margin: 0px auto 25px auto;
+				background-color: rgba(0,0,0,0.85);
+				/*background-color: #21D4FD;
+				background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);*/
+				/*https://cssgradient.io/gradient-backgrounds/*/
+				overflow: hidden;
+				border-radius: 22.5px;
+			}
+			.btn_mn_sec{
+				display: inline-block;
+				list-style: none;
+				width: 35px;
+				height: 35px;
+				/*background: rgba(255,255,255,0.2);*/
+				/*border-bottom: solid 3px transparent;*/
+				margin: 3.5px 0px -3.5px 30px;
+				cursor: pointer;
+				}
+
+				#mn_sec_home{
+					/*border-bottom: solid 3px rgb(255,201,14);*/
+				}
+
+				.btn_mn_sec img{
+					display: block;
+					width: 100%;
+					height: 35px;
+				}
+		</style>
+
+		<ul id="mn_sec">
+			<li id="mn_sec_home" class="btn_mn_sec">
+				<img src="img/icnhome.png">
+				<!-- <p>inicio</p> -->
+			</li>
+
+			<li id="mn_sec_tag" class="btn_mn_sec">
+				<img src="img/icntag.png" title="Categorias">
+				<!-- <p>Categorias</p> -->
+			</li>
+
+			<li id="mn_sec_fav" class="btn_mn_sec">
+				<img src="img/icnfav.png">
+				<!-- <p>Favoritos</p> -->
+			</li>
+
+			<li id="mn_sec_hist" class="btn_mn_sec">
+				<img src="img/icnhist.png">
+				<!-- <p>Recentes</p> -->
+			</li>
+
+			<div id="bar_select">
+				<div id="select"></div>
+				<style type="text/css">
+					#bar_select{
+						display: block;
+						width: 100%;
+						height: 3px;
+						/*background: #fff;*/
+					}
+					#select{
+						display: block;
+						width: 35px;
+						height: 3px;
+						background: rgb(255,201,14);
+						margin-left: 30px;
+						transition: linear 0.25s;
+					}
+				</style>
+				<script type="text/javascript">
+					var btn_home = document.getElementById('mn_sec_home');
+					var btn_hist =	document.getElementById('mn_sec_hist');
+					var btn_tag = document.getElementById('mn_sec_tag');
+					var btn_fav = document.getElementById('mn_sec_fav');
+					var bar = document.getElementById('select');
+
+					btn_home.onclick = function () {
+						bar.style.marginLeft = 30 + 'px';
+					}
+
+					btn_tag.onclick = function () {
+						bar.style.marginLeft = 99.49 + 'px';
+					}
+
+					btn_fav.onclick = function () {
+						bar.style.marginLeft = 168.5 + 'px';
+					}
+
+					btn_hist.onclick = function () {
+						bar.style.marginLeft = 237 + 'px';
+					}
+				</script>
+			</div>
+		</ul>
+	</div>
+
+	<!-- <button style="margin: 100px;" id="btntest">teste tamanho de tela</button>
+	<script type="text/javascript">
+		var btn = document.getElementById('btntest');
+		var tela = window.innerWidth;
+		
+		btn.onclick = function() {
+			alert(tela);
+		}
+	</script> -->
+
+	<div id="list_app"></div>
+
+	<div id="searchresult">
+		<button id="btncancelsearch"><img id="icncancel" src="img/icncancel.png"></button>
+	</div>
+
+</body>
+</html>
