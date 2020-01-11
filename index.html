@@ -139,29 +139,6 @@
 						transition: linear 0.25s;
 					}
 				</style>
-				<script type="text/javascript">
-					var btn_home = document.getElementById('mn_sec_home');
-					var btn_hist =	document.getElementById('mn_sec_hist');
-					var btn_tag = document.getElementById('mn_sec_tag');
-					var btn_fav = document.getElementById('mn_sec_fav');
-					var bar = document.getElementById('select');
-
-					btn_home.onclick = function () {
-						bar.style.marginLeft = 30 + 'px';
-					}
-
-					btn_tag.onclick = function () {
-						bar.style.marginLeft = 99.49 + 'px';
-					}
-
-					btn_fav.onclick = function () {
-						bar.style.marginLeft = 168.5 + 'px';
-					}
-
-					btn_hist.onclick = function () {
-						bar.style.marginLeft = 237 + 'px';
-					}
-				</script>
 			</div>
 		</ul>
 	</div>
@@ -189,6 +166,37 @@
 			width: 100%;
 			}
 	</style>
+	<script type="text/javascript">
+		var btn_home = document.getElementById('mn_sec_home');
+		var btn_hist =	document.getElementById('mn_sec_hist');
+		var btn_tag = document.getElementById('mn_sec_tag');
+		var btn_fav = document.getElementById('mn_sec_fav');
+		var bar = document.getElementById('select');
+		var img = document.getElementById('test'); 
+
+		btn_home.onclick = function () {
+			bar.style.marginLeft = 30 + 'px';
+			img.src = 'img/menu.png';
+			img.style.display = 'block';
+		}
+
+		btn_tag.onclick = function () {
+			bar.style.marginLeft = 99.49 + 'px';
+			img.style.display = 'none';
+		}
+
+		btn_fav.onclick = function () {
+			bar.style.marginLeft = 168.5 + 'px';
+			img.src = 'img/menufav.png';
+			img.style.display = 'block';
+		}
+
+		btn_hist.onclick = function () {
+			bar.style.marginLeft = 237 + 'px';
+			img.src = 'img/menuhist.png';
+			img.style.display = 'block';
+		}
+	</script>
 
 </body>
 </html>
