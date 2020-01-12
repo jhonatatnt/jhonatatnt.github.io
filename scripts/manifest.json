@@ -1,0 +1,22 @@
+{
+  "name": "allwe go",
+  "short_name": "allwe go",
+  "start_url": "../inicio.php",
+  "display": "fullscreen",
+  "background_color": "#000",
+  "theme_color":"#000",
+  "description": "",
+  "crossorigin":"use-credentials", 
+  "orientation":"any",
+  "icons": [{
+    "src": "../_img/favicon.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": ""
+  }]
+}
