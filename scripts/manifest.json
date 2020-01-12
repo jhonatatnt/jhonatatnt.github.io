@@ -1,7 +1,7 @@
 {
   "name": "allwe go",
   "short_name": "allwe go",
-  "start_url": "../inicio.php",
+  "start_url": "../index.html",
   "display": "fullscreen",
   "background_color": "#000",
   "theme_color":"#000",
